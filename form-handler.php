@@ -1,24 +1,39 @@
-<?php
-$name = $_POST['clientName']
-$visitor_email = $_POST['checkIn']
-$subject = $_POST['checkOut']
+<?php 
 
-$email_from ='info@veehousing21@gmail.com',
+if ($_SERVER["REQUEST_METHOD"] == "POST") { 
 
-$email_subject 'New form submission'
+    $clientName = htmlspecialchars($_POST['clientName']); 
 
-$email_body = "user name: $name.\n"
-                 "user_email: $visitor_email.\n"
-                    "subject: $subject.\n";
+    $checkInDate = htmlspecialchars($_POST['checkInDate']); 
 
-$to = 'leondaviseso@gmail.com';
+    $checkOutDate = htmlspecialchars($_POST['checkOutDate']); 
 
-$headers = "From: $email_from \r\n";
-$headers .= "reply_to: $visitor_email \r\n";
+     
 
+    // Email details 
 
-mail($to,$email_subject ,$email_body,$headers)
-header("Bookings.html")
-                 
+    $to = "leondaviseso@gmail.com"; // Replace with your email address 
 
-?>
+    $subject = "New Client Check-In Request"; 
+
+    $message = "Client Name: " . $clientName . "\n" . 
+
+               "Check-In Date: " . $checkInDate . "\n" . 
+
+               "Check-Out Date: " . $checkOutDate; 
+
+    $headers = "From: clients@gmail.com"; // Replace with a valid sender email 
+
+ 
+
+    // Send email 
+    if (mail($to, $subject, $message, $headers)) { 
+        echo "<h3>Request sent successfully!</h3>"; 
+    } else { 
+        echo "<h3>There was an error sending your request. Please try again.</h3>"; 
+    } 
+} 
+
+?> 
+
+ 
