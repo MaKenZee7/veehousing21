@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEE HOUSING MANAGEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <h2>VEE HOUSING MANAGEMENT</h2>
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="Facilities.html.html">FACILITIES</a></li>
+                    <li><a href="Bookings.html.html">BOOKING'S</a></li>
+                    <li><a href="Location.html.html">LOCATION</a></li>
+                    <li><a href="Contacts.html.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+        </nav>
+        <h1>LOCATION</h1>
+    
+</section>
+<!----------location------------>
+<section class="LOCATION">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7960.153002230489!2d39.70745818625842!3d-4.004695593579613!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smombasa%20%2CBamburi%2CMwembeni%2Cbehind%20blue%20pacific%2Cjemimah%20apartments!5e0!3m2!1sen!2ske!4v1740426649832!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div>
+        <section class="ctkm">
+        <i class="fa fa-home"></i>
+        <span>
+            <h5>Mombasa,Bamburi,<br>Mwembeni,<br>Behind Blue Pacific Hotel,<br>Jemimah Apartmenrts</h5>
+            <a href="Bookings.html.html"class="hero-btn">Contact us</a>
+        </span>
+    </div>
+</section>
+</section>
+
+
+    
+<!--------javascript for toggle Menu-->
+<script>
+    var navlinks= document.getElementById("nav-links")
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right ="-200px"
+    }
+</script>
+
+
+</body>
+</html>

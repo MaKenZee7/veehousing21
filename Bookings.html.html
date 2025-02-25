@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEE HOUSING MANAGEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <h2>VEE HOUSING MANAGEMENT</h2>
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="Facilities.html.html">FACILITIES</a></li>
+                    <li><a href="Bookings.html.html">BOOKING'S</a></li>
+                    <li><a href="Location.html.html">LOCATION</a></li>
+                    <li><a href="Contacts.html.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+        </nav>
+        <h1>BOOKING'S</h1>
+    
+</section>
+<!-----------call to know more-->
+<section class="ctkm">
+    <h1>Book With Us</h1>
+    <p>Experience the perfect blend of comfort and convenience at our charming place, where every details is designed to make your stay memorable.<br>Enjoy spacious,well appointed rooms featuring mordern amenities,complimenting WiFi, and a stunning view ,fully furnished kitchen,an extra bed and a parking also available as security is tight as usual.<br>Our staff is dedicated to providing personalised services, ensuring a comfortable and memorable stay  </p>
+    <a href="Bookings.html.html"class="hero-btn">Contact us</a> 
+
+<!---------------BOOKING TABLE------>
+<section>
+    <div class="container"> 
+        <h1>Booking Form</h1> 
+        <form action="form-handler.php" method="post"> 
+            <label for="clientName">Client Name:</label> 
+            <input type="text" id="clientName" name="clientName" required> 
+            <label for="checkIn">Check-in Date:</label> 
+            <input type="date" id="checkIn" name="checkIn" required> 
+            <label for="checkOut">Check-out Date:</label> 
+            <input type="date" id="checkOut" name="checkOut" required> 
+            <button type="submit">Submit</button> 
+
+        </form> 
+
+    </div> 
+</section>
+
+
+
+<!--------javascript for toggle Menu-->
+<script>
+    var navlinks= document.getElementById("nav-links")
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right ="-200px"
+    }
+</script>
+
+
+</body>
+</html>

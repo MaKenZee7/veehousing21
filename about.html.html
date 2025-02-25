@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEE HOUSING MANAGEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <section class="sub-header">
+        <h2>VEE HOUSING MANAGEMENT</h2>
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="Facilities.html.html">FACILITIES</a></li>
+                    <li><a href="Bookings.html.html">BOOKING'S</a></li>
+                    <li><a href="Location.html.html">LOCATION</a></li>
+                    <li><a href="Contacts.html.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+        </nav>
+        <h1>ABOUT US</h1>
+    
+</section>
+<!-----------call to know more-->
+<section class="ctkm">
+    <h1>More About Us</h1>
+    <p>Vee housing Management is a management company developed and specializies on BnB and hotel allocations suitable for clients needs. Guest enjoy comfortable accomodation along with an inviting atmosphere ideal for travelers seeking a long and short term stay cation.<br>We developed the amenities as we noticed that most of the local and foreign travellers that were seeking to enjoy and explore the view of Mombasa had challenges of a place to stay and enjoy and truty we are now the best for there needs.<br>The rage and charges are affordable and pocket friendly to cater for you and your needs dont hesitate to call us with your badget  </p>
+      <a href="Bookings.html.html"class="hero-btn">Contact us</a> 
+     
+</section>
+    
+<!--------javascript for toggle Menu-->
+<script>
+    var navlinks= document.getElementById("nav-links")
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right ="-200px"
+    }
+</script>
+
+
+</body>
+</html>

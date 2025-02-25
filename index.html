@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEE HOUSING MANAGEMENT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    
+</head>
+<body>
+    <section class="header">
+        <h2>VEE HOUSING MANAGEMENT</h2>
+        <nav>
+            <div class="nav-links" id="nav-links">
+                <i class="fa fa-times-circle" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html.html">ABOUT</a></li>
+                    <li><a href="Facilities.html.html">FACILITIES</a></li>
+                    <li><a href="Bookings.html.html">BOOKING'S</a></li>
+                    <li><a href="Location.html.html">LOCATION</a></li>
+                    <li><a href="Contacts.html.html">CONTACTS</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showmenu()"></i>
+        </nav>
+    <div class="text-box">
+        <h1>COME AND ENJOY THE EXPIRIENCE</h1>
+        <P>Escape to a tranquility at our serene BnB, where every moment is designed for relaxation and rejuvenation.<br>Nestled in a peaceful setting,our charming retreat offers a perfect blend of comfort and nature,inviting you to unwind,indulge in cozy surroundings, and savor the simple joys of a staycation.
+        </P>
+        <a href="Bookings.html.html"class="hero-btn">Contacts us to know more</a>
+    </div>
+
+    </section>
+<!-------------------facilities----->
+<section class="FACILITIES">
+    <h1>FACILITIES</h1>
+    <p1>Experience the perfect blend of comfort and convenience at our charming place, where every details is designed to make your stay memorable.<br>Enjoy spacious,well appointed rooms featuring mordern amenities,complimenting WiFi, and a stunning view ,fully furnished kitchen,an extra bed and a parking also available as security is tight as usual </p1>
+    <div class="row">
+        <div class="FACILITIES-col">
+            <h3>Mordern Amenities</h3>
+            <p>The perfect blend of comfort and convenience at our charming BnB.Where mordern amenities meet timeless hospitality </p>
+        </div>
+        <div class="FACILITIES-col">
+            <h3>Fully Furnished </h3>
+            <p>Step into our fully furnished BnB, where every detail has been thoughtfully curated for your comfort and convenience<br>Our BnB is the perfect retreate for travelers seeking both luxury and Fun.</p>
+        </div>
+        <div class="FACILITIES-col">
+            <h3>Safety & security</h3>
+            <p>Your safety and security are our top priorities at our BnB. We provide a secure enviroment with secure systems.Our property is regulaly maintained and adheres to health and safety guidelines.</p>
+        </div>
+    </div>
+</section>
+<!----------------ABOUT--------------->
+<section class="ABOUT">
+    <h1>ABOUT US</h1>
+    <p1>Vee Housing Management offers a personalized safe space experience and located in a residental settings. Guest enjoy comfortable accomodation along with an inviting atmosphere ideal for travelers seeking a long and short term stay cation</p1>
+    <div class="row">
+        <div class="about-col">
+            <img src="images/IMG-20250129-WA0105.jpg">
+            <div class="layer">    
+            </div>
+        </div>
+        <div class="about-col">
+            <img src="images/IMG-20250129-WA0129.jpg">
+            <div class="layer">    
+            </div>
+        </div>
+        <div class="about-col">
+            <img src="images/IMG-20250129-WA0084.jpg">
+            <div class="layer">    
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------Bookings-----------> 
+<section>
+    <class class="bookings">
+        <h1>BOOKING'S</h1>
+        <p>Experience the warmth of home away from home with our personalized services,cozy accomodations, and delighted experience.Whether you,re planning a romantic gateaway , a family vacation, or a solo retreat we invite you to explore our unique rooms and book your stay today<br>Discover the magic to explore and create unforgettable memories</p>
+
+
+
+        <div class="row">
+            <div class="bookings-col">
+                <img src="images/IMG-20250129-WA0101.jpg">
+            </div>
+            <div class="bookings-col">
+                <img src="images/IMG-20250130-WA0063.jpg">
+            </div>
+            <div class="bookings-col">
+                <img src="images/IMG-20250129-WA0078.jpg">
+            </div>
+        </div>
+</section>
+
+<!--------------Reviews------------------>
+<section>
+    <class class="Reviews">
+<h1>Client Reviews About The Place</h1>
+<p>The BnB was a delightful experience. The cozy atmosphere, friendly hosts, and highly recomende it!</p>
+<div class="row">
+    <div class="Reviews-col">
+        <img src="images/IMG_20230710_184607_995.jpg" >
+        <div>
+            <p>I enjoyed the place the peacefully enviroment and serenity and truly it is as clean as in the pictures</p>
+            <h3>Leon Davis</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+    <div class="Reviews-col">
+        <img src="images/d3b48c102e392fcb789c75c3fb87495b.jpg" >
+        <div>
+            <p>The trancuiltity and the cold breeze that comes from the open windows was perfect and the outdoor sitting area was my favourite</p>
+            <h3>Jane O.P</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+    </div>
+</div>
+</section>
+<!-----------call to know more-->
+<section class="ctkm">
+    <h1>For Bookings and Available accommodation</h1>
+        <a href=""class="hero-btn">Contact us</a>
+    
+</section>
+    
+<!--------javascript for toggle Menu-->
+<script>
+    var navlinks= document.getElementById("nav-links")
+    function showmenu(){
+        navlinks.style.right = "0";
+    }
+    function hidemenu(){
+        navlinks.style.right ="-200px"
+    }
+</script>
+
+
+</body>
+</html>
