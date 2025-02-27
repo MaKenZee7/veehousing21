@@ -6,6 +6,7 @@
     <title>VEE HOUSING MANAGEMENT</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+
     
 </head>
 <body>
@@ -38,14 +39,18 @@
 <section>
     <div class="container"> 
         <h1>Booking Form</h1> 
-        <form action="form-handler.php" method="post"> 
+        <form action="https://formsubmit.co/leondaviseso@gmail.com" method="POST">
             <label for="clientName">Client Name:</label> 
             <input type="text" id="clientName" name="clientName" required> 
+            <label for="email">email:</label>
+           <input type="text"  id="email" name="email" required>
+           <label for="PhoneNo">PhoneNo</label>
+           <input type="Digits" id="PhoneNo" name="PhoneNo" required>
             <label for="checkIn">Check-in Date:</label> 
             <input type="date" id="checkIn" name="checkIn" required> 
             <label for="checkOut">Check-out Date:</label> 
             <input type="date" id="checkOut" name="checkOut" required> 
-            <button type="submit">Submit</button> 
+            <button type="submit"onclick>BOOK NOW</button>
 
         </form> 
 
